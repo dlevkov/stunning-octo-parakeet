@@ -92,17 +92,7 @@ const Card = ({ title, items, icon, color, delay, active, style = {} }) => (
   </Anim>
 );
 
-const NumberCard = ({ number, label, delay, active, color }) => (
-  <Anim type="scaleIn" delay={delay} active={active}>
-    <div style={{
-      background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`,
-      borderRadius: 16, padding: "24px 32px", textAlign: "center", minWidth: 160,
-    }}>
-      <div style={{ fontSize: 38, fontWeight: 800, color, marginBottom: 6 }}>{number}</div>
-      <div style={{ fontSize: 13, color: COLORS.midGray, fontWeight: 500 }}>{label}</div>
-    </div>
-  </Anim>
-);
+
 
 const slides = [
   // Слайд 0 — Титульный
@@ -593,17 +583,7 @@ export default function App() {
   return (
     <div style={{ fontFamily: "'Figtree', sans-serif", background: COLORS.darkNavy, height: "100vh", display: "flex", flexDirection: "column", overflow: "hidden" }}>
       <style>{animations}</style>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 24px", borderBottom: `1px solid ${COLORS.cardBorder}`, flexShrink: 0 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <span style={{ fontSize: 13, color: COLORS.midGray }}>Слайд {current + 1} / {total}</span>
-          <span style={{ fontSize: 12, color: COLORS.accent, fontWeight: 600 }}>{slideNames[current]}</span>
-        </div>
-        <div style={{ display: "flex", gap: 8 }}>
-          <button onClick={() => setViewAll(true)} style={{ padding: "6px 16px", borderRadius: 6, background: "transparent", border: `1px solid ${COLORS.cardBorder}`, color: COLORS.midGray, cursor: "pointer", fontFamily: "'Figtree', sans-serif", fontSize: 12 }}>
-            Все слайды
-          </button>
-        </div>
-      </div>
+
 
       <div style={{ flex: 1, display: "flex", overflow: "hidden" }}>
         <div className="page" key={current} style={{ flex: 1, padding: "40px 56px", overflow: "auto" }}>

@@ -605,17 +605,7 @@ export default function App() {
     <div style={{ fontFamily: "'Figtree', sans-serif", background: COLORS.darkNavy, height: "100vh", display: "flex", flexDirection: "column", overflow: "hidden" }}>
       <style>{animations}</style>
       {/* Top Bar */}
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 24px", borderBottom: `1px solid ${COLORS.cardBorder}`, flexShrink: 0 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <span style={{ fontSize: 13, color: COLORS.midGray }}>Slide {current + 1} / {total}</span>
-          <span style={{ fontSize: 12, color: COLORS.accent, fontWeight: 600 }}>{slideNames[current]}</span>
-        </div>
-        <div style={{ display: "flex", gap: 8 }}>
-          <button onClick={() => setViewAll(true)} style={{ padding: "6px 16px", borderRadius: 6, background: "transparent", border: `1px solid ${COLORS.cardBorder}`, color: COLORS.midGray, cursor: "pointer", fontFamily: "'Figtree', sans-serif", fontSize: 12 }}>
-            View All
-          </button>
-        </div>
-      </div>
+
 
       {/* Slide */}
       <div style={{ flex: 1, display: "flex", overflow: "hidden" }}>
