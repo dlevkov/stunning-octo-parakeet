@@ -11,8 +11,8 @@ export default function App() {
         <div style={{ textAlign: "center" }}>
           <h1 style={{ color: "#FFFFFF", fontWeight: 400, marginBottom: 20 }}>Choose language</h1>
           <div className="lang-buttons">
-            <button className="btn btn--primary" onClick={() => setLang('en')}>English</button>
-            <button className="btn btn--secondary" onClick={() => setLang('ru')}>Russian</button>
+            <button className="btn btn--primary" onClick={() => setLang('en')}>english</button>
+            <button className="btn btn--secondary" onClick={() => setLang('ru')}>russian</button>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <div style={{ position: 'relative', height: '100%' }}>
-      <button className="back btn btn--secondary" onClick={() => setLang(null)}>Back</button>
+      <button className="back btn btn--secondary" onClick={() => setLang(null)}>back</button>
       {lang === 'en' ? <EnglishPresentation /> : <RussianPresentation />}
     </div>
   );
