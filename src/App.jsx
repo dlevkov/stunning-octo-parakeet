@@ -7,7 +7,7 @@ export default function App() {
 
   if (!lang) {
     return (
-      <div className="centered">
+      <div className="centered" style={{ position: 'relative' }}>
         <div style={{ textAlign: "center" }}>
           <h1 style={{ color: "#FFFFFF", fontWeight: 400, marginBottom: 20 }}>Choose language</h1>
           <div className="lang-buttons">
@@ -15,6 +15,26 @@ export default function App() {
             <button className="btn btn--secondary" onClick={() => setLang('ru')}>russian</button>
           </div>
         </div>
+
+        <button
+          onClick={() => setLang('en')}
+          aria-label="Full English version"
+          style={{
+            position: 'fixed',
+            left: '6%',
+            bottom: '10%',
+            padding: '6px 10px',
+            fontSize: 12,
+            borderRadius: 8,
+            background: 'transparent',
+            color: 'rgba(255,255,255,0.75)',
+            border: '1px solid rgba(255,255,255,0.06)',
+            opacity: 0.8,
+            cursor: 'pointer'
+          }}
+        >
+          full english version
+        </button>
       </div>
     );
   }
