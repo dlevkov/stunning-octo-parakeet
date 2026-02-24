@@ -137,11 +137,6 @@ const slides = [
           A strategic workshop to accelerate AI adoption across your development organization and product portfolio
         </p>
       </Anim>
-      <Anim type="fadeInUp" delay={0.9} active={active}>
-        <div style={{ padding: "14px 36px", borderRadius: 50, background: "linear-gradient(135deg, #3B82F6, #8B5CF6)", color: COLORS.white, fontWeight: 600, fontSize: 16 }}>
-          Executive Workshop Proposal
-        </div>
-      </Anim>
     </div>
   ),
 
