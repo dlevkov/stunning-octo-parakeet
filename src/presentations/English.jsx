@@ -145,87 +145,87 @@ const slides = [
     </div>
   ),
 
-  // Slide 1 - Agenda
-  ({ active }) => (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
-      <Anim type="fadeInUp" delay={0.1} active={active}>
-        <div style={{ marginBottom: 8 }}>
-          <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.accent, letterSpacing: 2 }}>AGENDA</span>
-        </div>
-        <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 8 }}>Two Strategic Workstreams</h2>
-        <p style={{ fontSize: 16, color: COLORS.midGray, marginBottom: 36, maxWidth: 600 }}>Our workshop addresses two complementary dimensions of LLM adoption</p>
-      </Anim>
-      <div style={{ display: "flex", gap: 28, flex: 1 }}>
-        <Anim type="fadeInLeft" delay={0.4} active={active} style={{ flex: 1 }}>
-          <div style={{
-            background: "linear-gradient(135deg, rgba(59,130,246,0.15), rgba(59,130,246,0.05))",
-            border: `2px solid ${COLORS.accent}`, borderRadius: 20, padding: 36, height: "100%",
-            position: "relative", overflow: "hidden",
-          }}>
-            <div style={{ position: "absolute", top: 16, right: 20, fontSize: 11, fontWeight: 700, color: COLORS.accent, background: `${COLORS.accent}22`, padding: "4px 14px", borderRadius: 50 }}>PRIMARY FOCUS</div>
-            <div style={{ fontSize: 14, fontWeight: 700, color: COLORS.accent, letterSpacing: 1, marginBottom: 12 }}>WORKSTREAM A</div>
-            <h3 style={{ fontSize: 24, fontWeight: 700, color: COLORS.white, marginBottom: 16 }}>LLM in Development</h3>
-            <p style={{ fontSize: 15, color: COLORS.textLight, lineHeight: 1.7, marginBottom: 20 }}>Transform your engineering organization with AI-powered development practices</p>
-            {["Developer Productivity", "Manager Observability & Tooling", "Quality Validations", "Output Automation"].map((item, i) => (
-              <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                <span style={{ width: 24, height: 24, borderRadius: "50%", background: `${COLORS.accent}33`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, color: COLORS.accent, fontWeight: 700 }}>{i+1}</span>
-                <span style={{ fontSize: 14, color: COLORS.white, fontWeight: 500 }}>{item}</span>
-              </div>
-            ))}
-          </div>
-        </Anim>
-        <Anim type="fadeInRight" delay={0.6} active={active} style={{ flex: 1 }}>
-          <div style={{
-            background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`,
-            borderRadius: 20, padding: 36, height: "100%", opacity: 0.8,
-          }}>
-            <div style={{ fontSize: 14, fontWeight: 700, color: COLORS.purple, letterSpacing: 1, marginBottom: 12 }}>WORKSTREAM B</div>
-            <h3 style={{ fontSize: 24, fontWeight: 700, color: COLORS.white, marginBottom: 16 }}>LLM in the Product</h3>
-            <p style={{ fontSize: 15, color: COLORS.textLight, lineHeight: 1.7, marginBottom: 20 }}>Replace manual financial services and legacy products with AI-driven solutions</p>
-            {["Client-facing AI advisors", "Automated risk assessment", "Personalized financial products", "Compliance automation"].map((item, i) => (
-              <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                <span style={{ color: COLORS.purple, fontSize: 14 }}>&#9656;</span>
-                <span style={{ fontSize: 14, color: COLORS.midGray, fontWeight: 500 }}>{item}</span>
-              </div>
-            ))}
-            <div style={{ marginTop: 16, fontSize: 13, color: COLORS.midGray, fontStyle: "italic" }}>Covered as Phase 2 of engagement</div>
-          </div>
-        </Anim>
-      </div>
-    </div>
-  ),
+  // // Slide 1 - Agenda
+  // ({ active }) => (
+  //   <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
+  //     <Anim type="fadeInUp" delay={0.1} active={active}>
+  //       <div style={{ marginBottom: 8 }}>
+  //         <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.accent, letterSpacing: 2 }}>AGENDA</span>
+  //       </div>
+  //       <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 8 }}>Two Strategic Workstreams</h2>
+  //       <p style={{ fontSize: 16, color: COLORS.midGray, marginBottom: 36, maxWidth: 600 }}>Our workshop addresses two complementary dimensions of LLM adoption</p>
+  //     </Anim>
+  //     <div style={{ display: "flex", gap: 28, flex: 1 }}>
+  //       <Anim type="fadeInLeft" delay={0.4} active={active} style={{ flex: 1 }}>
+  //         <div style={{
+  //           background: "linear-gradient(135deg, rgba(59,130,246,0.15), rgba(59,130,246,0.05))",
+  //           border: `2px solid ${COLORS.accent}`, borderRadius: 20, padding: 36, height: "100%",
+  //           position: "relative", overflow: "hidden",
+  //         }}>
+  //           <div style={{ position: "absolute", top: 16, right: 20, fontSize: 11, fontWeight: 700, color: COLORS.accent, background: `${COLORS.accent}22`, padding: "4px 14px", borderRadius: 50 }}>PRIMARY FOCUS</div>
+  //           <div style={{ fontSize: 14, fontWeight: 700, color: COLORS.accent, letterSpacing: 1, marginBottom: 12 }}>WORKSTREAM A</div>
+  //           <h3 style={{ fontSize: 24, fontWeight: 700, color: COLORS.white, marginBottom: 16 }}>LLM in Development</h3>
+  //           <p style={{ fontSize: 15, color: COLORS.textLight, lineHeight: 1.7, marginBottom: 20 }}>Transform your engineering organization with AI-powered development practices</p>
+  //           {["Developer Productivity", "Manager Observability & Tooling", "Quality Validations", "Output Automation"].map((item, i) => (
+  //             <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+  //               <span style={{ width: 24, height: 24, borderRadius: "50%", background: `${COLORS.accent}33`, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, color: COLORS.accent, fontWeight: 700 }}>{i+1}</span>
+  //               <span style={{ fontSize: 14, color: COLORS.white, fontWeight: 500 }}>{item}</span>
+  //             </div>
+  //           ))}
+  //         </div>
+  //       </Anim>
+  //       <Anim type="fadeInRight" delay={0.6} active={active} style={{ flex: 1 }}>
+  //         <div style={{
+  //           background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`,
+  //           borderRadius: 20, padding: 36, height: "100%", opacity: 0.8,
+  //         }}>
+  //           <div style={{ fontSize: 14, fontWeight: 700, color: COLORS.purple, letterSpacing: 1, marginBottom: 12 }}>WORKSTREAM B</div>
+  //           <h3 style={{ fontSize: 24, fontWeight: 700, color: COLORS.white, marginBottom: 16 }}>LLM in the Product</h3>
+  //           <p style={{ fontSize: 15, color: COLORS.textLight, lineHeight: 1.7, marginBottom: 20 }}>Replace manual financial services and legacy products with AI-driven solutions</p>
+  //           {["Client-facing AI advisors", "Automated risk assessment", "Personalized financial products", "Compliance automation"].map((item, i) => (
+  //             <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+  //               <span style={{ color: COLORS.purple, fontSize: 14 }}>&#9656;</span>
+  //               <span style={{ fontSize: 14, color: COLORS.midGray, fontWeight: 500 }}>{item}</span>
+  //             </div>
+  //           ))}
+  //           <div style={{ marginTop: 16, fontSize: 13, color: COLORS.midGray, fontStyle: "italic" }}>Covered as Phase 2 of engagement</div>
+  //         </div>
+  //       </Anim>
+  //     </div>
+  //   </div>
+  // ),
 
-  // Slide 2 - Why Now
-  ({ active }) => (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
-      <Anim type="fadeInUp" delay={0.1} active={active}>
-        <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.orange, letterSpacing: 2 }}>MARKET CONTEXT</span>
-        <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 8, marginTop: 8 }}>Why Now?</h2>
-        <p style={{ fontSize: 16, color: COLORS.midGray, marginBottom: 32 }}>Financial services firms that act now gain a compounding advantage</p>
-      </Anim>
-      <div style={{ display: "flex", gap: 20, marginBottom: 28 }}>
-        <NumberCard number="73%" label="of FS firms investing in AI" delay={0.3} active={active} color={COLORS.accent} />
-        <NumberCard number="2.5x" label="Developer velocity gains" delay={0.45} active={active} color={COLORS.green} />
-        <NumberCard number="40%" label="Reduction in manual processes" delay={0.6} active={active} color={COLORS.purple} />
-        <NumberCard number="$4.4T" label="Projected AI market by 2030" delay={0.75} active={active} color={COLORS.orange} />
-      </div>
-      <div style={{ display: "flex", gap: 20, flex: 1 }}>
-        {[
-          { title: "Competitive Pressure", text: "Early adopters are already shipping AI-enhanced products. The window for first-mover advantage is closing rapidly.", color: COLORS.red, icon: "&#9888;" },
-          { title: "Regulatory Readiness", text: "Firms with mature AI governance frameworks will navigate upcoming regulations faster and with less friction.", color: COLORS.orange, icon: "&#9881;" },
-          { title: "Talent Retention", text: "Top engineering talent expects modern AI tooling. Organizations without it face increasing attrition.", color: COLORS.green, icon: "&#9733;" },
-        ].map((item, i) => (
-          <Anim key={i} type="fadeInUp" delay={0.5 + i * 0.15} active={active} style={{ flex: 1 }}>
-            <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 16, padding: 24, height: "100%", borderLeft: `3px solid ${item.color}` }}>
-              <div style={{ fontSize: 24, marginBottom: 8 }} dangerouslySetInnerHTML={{ __html: item.icon }} />
-              <div style={{ fontSize: 16, fontWeight: 700, color: COLORS.white, marginBottom: 8 }}>{item.title}</div>
-              <div style={{ fontSize: 14, color: COLORS.textLight, lineHeight: 1.6 }}>{item.text}</div>
-            </div>
-          </Anim>
-        ))}
-      </div>
-    </div>
-  ),
+  // // Slide 2 - Why Now
+  // ({ active }) => (
+  //   <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
+  //     <Anim type="fadeInUp" delay={0.1} active={active}>
+  //       <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.orange, letterSpacing: 2 }}>MARKET CONTEXT</span>
+  //       <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 8, marginTop: 8 }}>Why Now?</h2>
+  //       <p style={{ fontSize: 16, color: COLORS.midGray, marginBottom: 32 }}>Financial services firms that act now gain a compounding advantage</p>
+  //     </Anim>
+  //     <div style={{ display: "flex", gap: 20, marginBottom: 28 }}>
+  //       <NumberCard number="73%" label="of FS firms investing in AI" delay={0.3} active={active} color={COLORS.accent} />
+  //       <NumberCard number="2.5x" label="Developer velocity gains" delay={0.45} active={active} color={COLORS.green} />
+  //       <NumberCard number="40%" label="Reduction in manual processes" delay={0.6} active={active} color={COLORS.purple} />
+  //       <NumberCard number="$4.4T" label="Projected AI market by 2030" delay={0.75} active={active} color={COLORS.orange} />
+  //     </div>
+  //     <div style={{ display: "flex", gap: 20, flex: 1 }}>
+  //       {[
+  //         { title: "Competitive Pressure", text: "Early adopters are already shipping AI-enhanced products. The window for first-mover advantage is closing rapidly.", color: COLORS.red, icon: "&#9888;" },
+  //         { title: "Regulatory Readiness", text: "Firms with mature AI governance frameworks will navigate upcoming regulations faster and with less friction.", color: COLORS.orange, icon: "&#9881;" },
+  //         { title: "Talent Retention", text: "Top engineering talent expects modern AI tooling. Organizations without it face increasing attrition.", color: COLORS.green, icon: "&#9733;" },
+  //       ].map((item, i) => (
+  //         <Anim key={i} type="fadeInUp" delay={0.5 + i * 0.15} active={active} style={{ flex: 1 }}>
+  //           <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 16, padding: 24, height: "100%", borderLeft: `3px solid ${item.color}` }}>
+  //             <div style={{ fontSize: 24, marginBottom: 8 }} dangerouslySetInnerHTML={{ __html: item.icon }} />
+  //             <div style={{ fontSize: 16, fontWeight: 700, color: COLORS.white, marginBottom: 8 }}>{item.title}</div>
+  //             <div style={{ fontSize: 14, color: COLORS.textLight, lineHeight: 1.6 }}>{item.text}</div>
+  //           </div>
+  //         </Anim>
+  //       ))}
+  //     </div>
+  //   </div>
+  // ),
 
   // Slide 3 - Workstream A Overview
   ({ active }) => (
@@ -282,13 +282,59 @@ const slides = [
           <Card active={active} delay={0.55} color={COLORS.red} icon="&#128737;" title="Security Posture & Risk Reduction" items={["Proactive vulnerability detection during development", "Automated security scanning on every commit and PR", "Reduced attack surface through AI-enforced secure coding patterns"]} />
           <Anim type="scaleIn" delay={0.65} active={active} style={{ flex: 1 }}>
             <div style={{ background: "linear-gradient(135deg, rgba(59,130,246,0.12), rgba(139,92,246,0.12))", border: `1px solid ${COLORS.accent}44`, borderRadius: 16, padding: 28, height: "100%" }}>
-              <div style={{ fontSize: 14, fontWeight: 700, color: COLORS.accent, marginBottom: 16 }}>EXPECTED IMPACT</div>
-              {[["Cycle Time", "-35%", COLORS.green], ["PR Throughput", "+50%", COLORS.accent], ["Bug Resolution", "-45%", COLORS.green], ["Security Vulns", "-60%", COLORS.red], ["Onboarding Time", "-40%", COLORS.purple], ["Code Quality", "+30%", COLORS.orange]].map(([label, val, c], i) => (
-                <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8, paddingBottom: 8, borderBottom: i < 5 ? `1px solid ${COLORS.cardBorder}` : "none" }}>
-                  <span style={{ fontSize: 14, color: COLORS.textLight }}>{label}</span>
-                  <span style={{ fontSize: 20, fontWeight: 700, color: c }}>{val}</span>
+              <div style={{ fontSize: 14, fontWeight: 700, color: COLORS.accent, marginBottom: 12 }}>Validated metrics and market-specific expected impact</div>
+
+              <div style={{ display: "flex", gap: 16 }}>
+                <div style={{ flex: 1 }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 5 }}>
+                    <thead>
+                      <tr>
+                        <th style={{ textAlign: "left", padding: "6px 8px", color: COLORS.midGray, width: "45%" }}>Metric in ZoomInfo</th>
+                        <th style={{ textAlign: "left", padding: "6px 8px", color: COLORS.midGray }}>Industry Benchmark (2025-2026)</th>
+                     
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>91% Adoption</td>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>90% – 91%</td>
+                      </tr>
+                      <tr>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>2.5x PR Throughput</td>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>2.1x (113%)</td>
+                      </tr>
+                      <tr>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>20% Reduction in Cycle Time</td>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>24%</td>
+                      </tr>
+                      <tr>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>15% Quality & Security Gain</td>
+                        <td style={{ padding: "8px", color: COLORS.textLight }}>~5–15%</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              ))}
+
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 13, color: COLORS.textLight, marginBottom: 8 }}><strong style={{ color: COLORS.white }}>US Market</strong></div>
+                  <ul style={{ color: COLORS.textLight, fontSize: 6, marginTop: 0, marginBottom: 12 }}>
+                    <li>Shift to "Agentic" R&D — AI agents handling end-to-end tickets push PR throughput for top firms toward 3x–4x.</li>
+                    <li>~49% of developers expect AI to automate deployment pipelines (IDC), reducing DevOps overhead and pipeline toil.</li>
+                    <li>20% time savings are commonly reallocated to technical debt reduction and product scaling rather than headcount cuts.</li>
+                  </ul>
+
+                  <div style={{ fontSize: 13, color: COLORS.textLight, marginBottom: 8 }}><strong style={{ color: COLORS.white }}>Israel Market</strong></div>
+                  <ul style={{ color: COLORS.textLight, fontSize: 6, marginTop: 0 }}>
+                    <li>Hyper-adoption (~95% in high-tech); ~78% daily AI usage creates a labour-force multiplier effect.</li>
+                    <li>AI mitigates manpower gaps (reserve duty, talent shortages); some sectors report effective time recovery up to 50%.</li>
+                    <li>Strong focus on deep-tech: tooling, red-teaming, governance and security productization for global users.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div style={{ marginTop: 12, fontSize: 12, color: COLORS.midGray }}>
+                <strong style={{ color: COLORS.textLight }}>Sources:</strong> DX Q4 2025; Jellyfish "2025 AI Metrics in Review"; Israel Innovation Authority; GitHub/Accenture; Myers-JDC-Brookdale.
+              </div>
             </div>
           </Anim>
         </div>
@@ -415,141 +461,141 @@ const slides = [
     </div>
   ),
 
-  // Slide 8 - Workstream B Overview
-  ({ active }) => (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
-      <Anim type="fadeInUp" delay={0.1} active={active}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
-          <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.purple, letterSpacing: 2 }}>WORKSTREAM B — OVERVIEW</span>
-        </div>
-        <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 8 }}>LLM in the Product & Service Layer</h2>
-        <p style={{ fontSize: 16, color: COLORS.midGray, marginBottom: 32 }}>Replacing manual financial services with intelligent, AI-driven alternatives</p>
-      </Anim>
-      <div style={{ display: "flex", gap: 24, flex: 1 }}>
-        {[
-          { title: "AI Financial Advisors", desc: "Replace or augment manual advisory services with LLM-powered conversational agents that provide personalized financial guidance at scale", items: ["24/7 client availability", "Consistent compliance", "Scalable personalization"], color: COLORS.purple },
-          { title: "Automated Risk & Reporting", desc: "Transform manually-compiled risk assessments and client reports into real-time, AI-generated intelligence", items: ["Real-time risk scoring", "Automated regulatory filings", "Dynamic portfolio reports"], color: COLORS.accent },
-          { title: "Smart Product Engines", desc: "Create dynamically personalized financial products tailored to individual client profiles, risk tolerance, and life events", items: ["Hyper-personalization", "Dynamic pricing models", "Predictive client needs"], color: COLORS.green },
-        ].map((item, i) => (
-          <Anim key={i} type="fadeInUp" delay={0.3 + i * 0.2} active={active} style={{ flex: 1 }}>
-            <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 20, padding: 28, height: "100%", display: "flex", flexDirection: "column" }}>
-              <div style={{ width: 50, height: 50, borderRadius: 12, background: `${item.color}22`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
-                <div style={{ width: 20, height: 20, borderRadius: "50%", background: item.color }} />
-              </div>
-              <h3 style={{ fontSize: 19, fontWeight: 700, color: COLORS.white, marginBottom: 12 }}>{item.title}</h3>
-              <p style={{ fontSize: 14, color: COLORS.textLight, lineHeight: 1.7, marginBottom: 20, flex: 1 }}>{item.desc}</p>
-              {item.items.map((it, j) => (
-                <div key={j} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-                  <span style={{ color: item.color, fontSize: 14 }}>&#9656;</span>
-                  <span style={{ fontSize: 13, color: COLORS.textLight }}>{it}</span>
-                </div>
-              ))}
-            </div>
-          </Anim>
-        ))}
-      </div>
-      <Anim type="fadeInUp" delay={0.9} active={active}>
-        <div style={{ marginTop: 20, background: `${COLORS.purple}11`, border: `1px solid ${COLORS.purple}33`, borderRadius: 12, padding: "14px 24px", textAlign: "center" }}>
-          <span style={{ fontSize: 14, color: COLORS.textLight }}>
-            <strong style={{ color: COLORS.purple }}>Phase 2 Engagement</strong> — We'll map these opportunities in detail after establishing development foundations
-          </span>
-        </div>
-      </Anim>
-    </div>
-  ),
+  // // Slide 8 - Workstream B Overview
+  // ({ active }) => (
+  //   <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
+  //     <Anim type="fadeInUp" delay={0.1} active={active}>
+  //       <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+  //         <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.purple, letterSpacing: 2 }}>WORKSTREAM B — OVERVIEW</span>
+  //       </div>
+  //       <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 8 }}>LLM in the Product & Service Layer</h2>
+  //       <p style={{ fontSize: 16, color: COLORS.midGray, marginBottom: 32 }}>Replacing manual financial services with intelligent, AI-driven alternatives</p>
+  //     </Anim>
+  //     <div style={{ display: "flex", gap: 24, flex: 1 }}>
+  //       {[
+  //         { title: "AI Financial Advisors", desc: "Replace or augment manual advisory services with LLM-powered conversational agents that provide personalized financial guidance at scale", items: ["24/7 client availability", "Consistent compliance", "Scalable personalization"], color: COLORS.purple },
+  //         { title: "Automated Risk & Reporting", desc: "Transform manually-compiled risk assessments and client reports into real-time, AI-generated intelligence", items: ["Real-time risk scoring", "Automated regulatory filings", "Dynamic portfolio reports"], color: COLORS.accent },
+  //         { title: "Smart Product Engines", desc: "Create dynamically personalized financial products tailored to individual client profiles, risk tolerance, and life events", items: ["Hyper-personalization", "Dynamic pricing models", "Predictive client needs"], color: COLORS.green },
+  //       ].map((item, i) => (
+  //         <Anim key={i} type="fadeInUp" delay={0.3 + i * 0.2} active={active} style={{ flex: 1 }}>
+  //           <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 20, padding: 28, height: "100%", display: "flex", flexDirection: "column" }}>
+  //             <div style={{ width: 50, height: 50, borderRadius: 12, background: `${item.color}22`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
+  //               <div style={{ width: 20, height: 20, borderRadius: "50%", background: item.color }} />
+  //             </div>
+  //             <h3 style={{ fontSize: 19, fontWeight: 700, color: COLORS.white, marginBottom: 12 }}>{item.title}</h3>
+  //             <p style={{ fontSize: 14, color: COLORS.textLight, lineHeight: 1.7, marginBottom: 20, flex: 1 }}>{item.desc}</p>
+  //             {item.items.map((it, j) => (
+  //               <div key={j} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+  //                 <span style={{ color: item.color, fontSize: 14 }}>&#9656;</span>
+  //                 <span style={{ fontSize: 13, color: COLORS.textLight }}>{it}</span>
+  //               </div>
+  //             ))}
+  //           </div>
+  //         </Anim>
+  //       ))}
+  //     </div>
+  //     <Anim type="fadeInUp" delay={0.9} active={active}>
+  //       <div style={{ marginTop: 20, background: `${COLORS.purple}11`, border: `1px solid ${COLORS.purple}33`, borderRadius: 12, padding: "14px 24px", textAlign: "center" }}>
+  //         <span style={{ fontSize: 14, color: COLORS.textLight }}>
+  //           <strong style={{ color: COLORS.purple }}>Phase 2 Engagement</strong> — We'll map these opportunities in detail after establishing development foundations
+  //         </span>
+  //       </div>
+  //     </Anim>
+  //   </div>
+  // ),
 
-  // Slide 9 - Workshop Model
-  ({ active }) => (
-    <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
-      <Anim type="fadeInUp" delay={0.1} active={active}>
-        <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.accent, letterSpacing: 2 }}>ENGAGEMENT MODEL</span>
-        <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 32, marginTop: 8 }}>Workshop Structure</h2>
-      </Anim>
-      <div style={{ display: "flex", gap: 24, marginBottom: 24 }}>
-        {[
-          { phase: "Phase 1", title: "Assess", duration: "Week 1-2", desc: "Evaluate current tooling, workflows, and readiness across engineering teams", color: COLORS.accent, items: ["Tech stack audit", "Team interviews", "Gap analysis"] },
-          { phase: "Phase 2", title: "Pilot", duration: "Week 3-6", desc: "Deploy LLM tools with select teams, measure impact, and iterate on configuration", color: COLORS.purple, items: ["Tool deployment", "KPI baseline", "Iterative tuning"] },
-          { phase: "Phase 3", title: "Scale", duration: "Week 7-12", desc: "Roll out proven practices org-wide with governance frameworks and training programs", color: COLORS.green, items: ["Org-wide rollout", "Governance setup", "Training programs"] },
-        ].map((item, i) => (
-          <Anim key={i} type="fadeInUp" delay={0.3 + i * 0.2} active={active} style={{ flex: 1 }}>
-            <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 20, padding: 28, height: "100%", position: "relative" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                <span style={{ fontSize: 12, fontWeight: 700, color: item.color, letterSpacing: 1 }}>{item.phase}</span>
-                <span style={{ fontSize: 11, color: COLORS.midGray, background: COLORS.cardBg, padding: "4px 12px", borderRadius: 50 }}>{item.duration}</span>
-              </div>
-              <h3 style={{ fontSize: 22, fontWeight: 700, color: COLORS.white, marginBottom: 10 }}>{item.title}</h3>
-              <p style={{ fontSize: 14, color: COLORS.textLight, lineHeight: 1.6, marginBottom: 16 }}>{item.desc}</p>
-              {item.items.map((it, j) => (
-                <div key={j} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
-                  <span style={{ width: 6, height: 6, borderRadius: "50%", background: item.color }} />
-                  <span style={{ fontSize: 13, color: COLORS.textLight }}>{it}</span>
-                </div>
-              ))}
-            </div>
-          </Anim>
-        ))}
-      </div>
-      <Anim type="fadeInUp" delay={0.9} active={active}>
-        <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 16, padding: 24, display: "flex", gap: 40, justifyContent: "center" }}>
-          {[
-            ["Tailored", "Customized to your tech stack and regulatory constraints"],
-            ["Measurable", "Clear KPIs and ROI benchmarks at every phase"],
-            ["Hands-on", "Your teams build real skills, not just theory"],
-          ].map(([title, desc], i) => (
-            <div key={i} style={{ textAlign: "center", flex: 1 }}>
-              <div style={{ fontSize: 15, fontWeight: 700, color: COLORS.white, marginBottom: 4 }}>{title}</div>
-              <div style={{ fontSize: 13, color: COLORS.midGray }}>{desc}</div>
-            </div>
-          ))}
-        </div>
-      </Anim>
-    </div>
-  ),
+  // // Slide 9 - Workshop Model
+  // ({ active }) => (
+  //   <div style={{ display: "flex", flexDirection: "column", height: "100%", padding: "20px 0" }}>
+  //     <Anim type="fadeInUp" delay={0.1} active={active}>
+  //       <span style={{ fontSize: 12, fontWeight: 700, color: COLORS.accent, letterSpacing: 2 }}>ENGAGEMENT MODEL</span>
+  //       <h2 style={{ fontSize: 38, fontWeight: 300, color: COLORS.white, marginBottom: 32, marginTop: 8 }}>Workshop Structure</h2>
+  //     </Anim>
+  //     <div style={{ display: "flex", gap: 24, marginBottom: 24 }}>
+  //       {[
+  //         { phase: "Phase 1", title: "Assess", duration: "Week 1-2", desc: "Evaluate current tooling, workflows, and readiness across engineering teams", color: COLORS.accent, items: ["Tech stack audit", "Team interviews", "Gap analysis"] },
+  //         { phase: "Phase 2", title: "Pilot", duration: "Week 3-6", desc: "Deploy LLM tools with select teams, measure impact, and iterate on configuration", color: COLORS.purple, items: ["Tool deployment", "KPI baseline", "Iterative tuning"] },
+  //         { phase: "Phase 3", title: "Scale", duration: "Week 7-12", desc: "Roll out proven practices org-wide with governance frameworks and training programs", color: COLORS.green, items: ["Org-wide rollout", "Governance setup", "Training programs"] },
+  //       ].map((item, i) => (
+  //         <Anim key={i} type="fadeInUp" delay={0.3 + i * 0.2} active={active} style={{ flex: 1 }}>
+  //           <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 20, padding: 28, height: "100%", position: "relative" }}>
+  //             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+  //               <span style={{ fontSize: 12, fontWeight: 700, color: item.color, letterSpacing: 1 }}>{item.phase}</span>
+  //               <span style={{ fontSize: 11, color: COLORS.midGray, background: COLORS.cardBg, padding: "4px 12px", borderRadius: 50 }}>{item.duration}</span>
+  //             </div>
+  //             <h3 style={{ fontSize: 22, fontWeight: 700, color: COLORS.white, marginBottom: 10 }}>{item.title}</h3>
+  //             <p style={{ fontSize: 14, color: COLORS.textLight, lineHeight: 1.6, marginBottom: 16 }}>{item.desc}</p>
+  //             {item.items.map((it, j) => (
+  //               <div key={j} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 8 }}>
+  //                 <span style={{ width: 6, height: 6, borderRadius: "50%", background: item.color }} />
+  //                 <span style={{ fontSize: 13, color: COLORS.textLight }}>{it}</span>
+  //               </div>
+  //             ))}
+  //           </div>
+  //         </Anim>
+  //       ))}
+  //     </div>
+  //     <Anim type="fadeInUp" delay={0.9} active={active}>
+  //       <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.cardBorder}`, borderRadius: 16, padding: 24, display: "flex", gap: 40, justifyContent: "center" }}>
+  //         {[
+  //           ["Tailored", "Customized to your tech stack and regulatory constraints"],
+  //           ["Measurable", "Clear KPIs and ROI benchmarks at every phase"],
+  //           ["Hands-on", "Your teams build real skills, not just theory"],
+  //         ].map(([title, desc], i) => (
+  //           <div key={i} style={{ textAlign: "center", flex: 1 }}>
+  //             <div style={{ fontSize: 15, fontWeight: 700, color: COLORS.white, marginBottom: 4 }}>{title}</div>
+  //             <div style={{ fontSize: 13, color: COLORS.midGray }}>{desc}</div>
+  //           </div>
+  //         ))}
+  //       </div>
+  //     </Anim>
+  //   </div>
+  // ),
 
-  // Slide 10 - CTA
-  ({ active }) => (
-    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100%", textAlign: "center", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: -120, left: "50%", transform: "translateX(-50%)", width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 60%)" }} />
-      <div style={{ position: "absolute", bottom: -100, right: -100, width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 60%)" }} />
-      <Anim type="scaleIn" delay={0.2} active={active}>
-        <div style={{ width: 80, height: 80, borderRadius: "50%", background: "linear-gradient(135deg, #3B82F6, #8B5CF6)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 32, boxShadow: "0 0 40px rgba(59,130,246,0.3)" }}>
-          <span style={{ fontSize: 36, color: COLORS.white }}>&#10140;</span>
-        </div>
-      </Anim>
-      <Anim type="fadeInUp" delay={0.4} active={active}>
-        <h2 style={{ fontSize: 46, fontWeight: 300, color: COLORS.white, lineHeight: 1.2, maxWidth: 700, marginBottom: 16 }}>
-          Let's <span style={{ fontWeight: 700 }}>Get Started</span>
-        </h2>
-      </Anim>
-      <Anim type="fadeInUp" delay={0.6} active={active}>
-        <p style={{ fontSize: 18, color: COLORS.midGray, maxWidth: 550, lineHeight: 1.6, marginBottom: 40 }}>
-          Schedule the workshop, define your pilot teams, and begin transforming your engineering organization with LLM
-        </p>
-      </Anim>
-      <div style={{ display: "flex", gap: 20, marginBottom: 40 }}>
-        {[
-          { label: "Schedule Workshop", primary: true },
-          { label: "Define Pilot Teams", primary: false },
-          { label: "Align on KPIs", primary: false },
-        ].map((btn, i) => (
-          <Anim key={i} type="fadeInUp" delay={0.8 + i * 0.1} active={active}>
-            <div style={{
-              padding: "14px 28px", borderRadius: 50, fontWeight: 600, fontSize: 15,
-              background: btn.primary ? "linear-gradient(135deg, #3B82F6, #8B5CF6)" : "transparent",
-              color: COLORS.white,
-              border: btn.primary ? "none" : `1px solid ${COLORS.cardBorder}`,
-              cursor: "pointer",
-            }}>{btn.label}</div>
-          </Anim>
-        ))}
-      </div>
-      <Anim type="fadeIn" delay={1.2} active={active}>
-        <p style={{ fontSize: 14, color: COLORS.midGray }}>
-          Ready to discuss next steps? Let's align on timeline and scope.
-        </p>
-      </Anim>
-    </div>
-  ),
+  // // Slide 10 - CTA
+  // ({ active }) => (
+  //   <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100%", textAlign: "center", position: "relative", overflow: "hidden" }}>
+  //     <div style={{ position: "absolute", top: -120, left: "50%", transform: "translateX(-50%)", width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(59,130,246,0.1) 0%, transparent 60%)" }} />
+  //     <div style={{ position: "absolute", bottom: -100, right: -100, width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle, rgba(139,92,246,0.08) 0%, transparent 60%)" }} />
+  //     <Anim type="scaleIn" delay={0.2} active={active}>
+  //       <div style={{ width: 80, height: 80, borderRadius: "50%", background: "linear-gradient(135deg, #3B82F6, #8B5CF6)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 32, boxShadow: "0 0 40px rgba(59,130,246,0.3)" }}>
+  //         <span style={{ fontSize: 36, color: COLORS.white }}>&#10140;</span>
+  //       </div>
+  //     </Anim>
+  //     <Anim type="fadeInUp" delay={0.4} active={active}>
+  //       <h2 style={{ fontSize: 46, fontWeight: 300, color: COLORS.white, lineHeight: 1.2, maxWidth: 700, marginBottom: 16 }}>
+  //         Let's <span style={{ fontWeight: 700 }}>Get Started</span>
+  //       </h2>
+  //     </Anim>
+  //     <Anim type="fadeInUp" delay={0.6} active={active}>
+  //       <p style={{ fontSize: 18, color: COLORS.midGray, maxWidth: 550, lineHeight: 1.6, marginBottom: 40 }}>
+  //         Schedule the workshop, define your pilot teams, and begin transforming your engineering organization with LLM
+  //       </p>
+  //     </Anim>
+  //     <div style={{ display: "flex", gap: 20, marginBottom: 40 }}>
+  //       {[
+  //         { label: "Schedule Workshop", primary: true },
+  //         { label: "Define Pilot Teams", primary: false },
+  //         { label: "Align on KPIs", primary: false },
+  //       ].map((btn, i) => (
+  //         <Anim key={i} type="fadeInUp" delay={0.8 + i * 0.1} active={active}>
+  //           <div style={{
+  //             padding: "14px 28px", borderRadius: 50, fontWeight: 600, fontSize: 15,
+  //             background: btn.primary ? "linear-gradient(135deg, #3B82F6, #8B5CF6)" : "transparent",
+  //             color: COLORS.white,
+  //             border: btn.primary ? "none" : `1px solid ${COLORS.cardBorder}`,
+  //             cursor: "pointer",
+  //           }}>{btn.label}</div>
+  //         </Anim>
+  //       ))}
+  //     </div>
+  //     <Anim type="fadeIn" delay={1.2} active={active}>
+  //       <p style={{ fontSize: 14, color: COLORS.midGray }}>
+  //         Ready to discuss next steps? Let's align on timeline and scope.
+  //       </p>
+  //     </Anim>
+  //   </div>
+  // ),
 ];
 
 export default function App() {
@@ -574,6 +620,82 @@ export default function App() {
     "Title", "Agenda", "Why Now?", "Dev Workstream", "Productivity",
     "Observability", "Quality", "Automation", "Product Layer", "Workshop Model", "Next Steps"
   ];
+
+  // Create readable slugs for each slide and helper funcs for path <-> index
+  const slideSlugs = slideNames.map((n, i) => {
+    if (i === 0) return "";
+    return n.toLowerCase().replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
+  });
+
+  const indexToPath = (i) => {
+    if (i === 0) return "/";
+    return `/${slideSlugs[i]}`;
+  };
+
+  const pathToIndex = (path) => {
+    if (!path || path === "/") return 0;
+    const cleaned = path.replace(/^\//, "");
+    const idx = slideSlugs.indexOf(cleaned);
+    if (idx !== -1) return idx;
+    // fallback: try /slide-N pattern
+    const m = cleaned.match(/^slide-(\\d+)$/);
+    if (m) {
+      const num = Number(m[1]);
+      if (!Number.isNaN(num) && num >= 0 && num < slideNames.length) return num;
+    }
+    return 0;
+  };
+
+  // Sync current slide from URL on load and when history changes
+  useEffect(() => {
+    const syncFromLocation = () => {
+      const idx = pathToIndex(window.location.pathname);
+      setCurrent(idx);
+    };
+    syncFromLocation();
+    const onPop = () => syncFromLocation();
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
+
+  // Push URL when current changes
+  useEffect(() => {
+    const desired = indexToPath(current);
+    if (window.location.pathname !== desired) {
+      window.history.pushState({}, "", desired);
+    }
+  }, [current]);
+
+  // Adjust font sizes by 1.35x for specific routes (/agenda, /why-now)
+  useEffect(() => {
+    const scaleRoutes = ["/agenda", "/why-now", "/dev-workstream", "/productivity", "/observability"];
+    const scale = scaleRoutes.includes(window.location.pathname) ? 1.35 : 1;
+    const page = document.querySelector('.page');
+    if (!page) return;
+
+    const elements = Array.from(page.querySelectorAll('*'));
+
+    if (scale === 1) {
+      // revert any previously stored original sizes
+      elements.forEach((el) => {
+        const orig = el.dataset.origFontSize;
+        if (orig) {
+          el.style.fontSize = orig;
+          delete el.dataset.origFontSize;
+        }
+      });
+      return;
+    }
+
+    elements.forEach((el) => {
+      const cs = window.getComputedStyle(el);
+      const font = cs && cs.fontSize;
+      if (!font) return;
+      if (!el.dataset.origFontSize) el.dataset.origFontSize = font;
+      const px = parseFloat(font);
+      if (Number.isFinite(px)) el.style.fontSize = `${px * scale}px`;
+    });
+  }, [current, viewAll]);
 
   if (viewAll) {
     return (
